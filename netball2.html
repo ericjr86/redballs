@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   
+    <!--<link rel="stylesheet" type="text/css" href="hellohello.css">-->
+    
+   <title>Page Title</title>  
+    <script type="text/javascript">
+        function sayHello(){
+            alert('Hi there');
+            
+        }
+            function moveRight(){
+                redball.left= redball.left +1;
+                redball.left= redball.left +1;
+                redball.left= redball.left +1;
+                redball.left= redball.left +1;
+                redball.left= redball.left +1;
+                redball.left= redball.left +1;
+                redball.left= redball.left +1;
+                redball.left= redball.left +1;
+                redball.left= redball.left +1;
+                redball.left= redball.left +1;
+                redball.left= redball.left +1;
+                redball.left= redball.left +1;
+            } 
+            function moveLeft(){
+                redball.left= redball.left -1;
+                redball.left= redball.left -1;
+                redball.left= redball.left -1;
+                redball.left= redball.left -1;
+                redball.left= redball.left -1;
+                redball.left= redball.left -1;
+                redball.left= redball.left -1;
+                redball.left= redball.left -1;
+                redball.left= redball.left -1;
+                redball.left= redball.left -1;
+                redball.left= redball.left -1;
+                redball.left= redball.left -1;
+            
+            }
+            function moveUp(){
+                redball.top= redball.top -1;
+                redball.top= redball.top -1;
+                redball.top= redball.top -1;
+                redball.top= redball.top -1;
+                redball.top= redball.top -1;
+                redball.top= redball.top -1;
+                redball.top= redball.top -1;
+                redball.top= redball.top -1;
+                redball.top= redball.top -1;
+                redball.top= redball.top -1;
+                redball.top= redball.top -1;
+                redball.top= redball.top -1;
+            }
+            function moveDown(){
+                redball.top= redball.top +1;
+                redball.top= redball.top +1;
+                redball.top= redball.top +1;
+                redball.top= redball.top +1;
+                redball.top= redball.top +1;
+                redball.top= redball.top +1;
+                redball.top= redball.top +1;
+                redball.top= redball.top +1;
+                redball.top= redball.top +1;
+                redball.top= redball.top +1;
+                redball.top= redball.top +1;
+                redball.top= redball.top +1;
+            }
+            function movediagonaluR(){
+                redball.top=redball.top -1;
+                redball.left=redball.left +1;
+                redball.top=redball.top -1;
+                redball.left=redball.left +1;
+                redball.top=redball.top -1;
+                redball.left=redball.left +1;
+                redball.top=redball.top -1;
+                redball.left=redball.left +1;
+                redball.top=redball.top -1;
+                redball.left=redball.left +1;
+                redball.top=redball.top -1;
+                redball.left=redball.left +1;
+            }
+            function movediagonaluL(){
+                redball.top=redball.top -1;
+                redball.left=redball.left -1;
+                 redball.top=redball.top -1;
+                redball.left=redball.left -1;
+                 redball.top=redball.top -1;
+                redball.left=redball.left -1;
+                 redball.top=redball.top -1;
+                redball.left=redball.left -1;
+                 redball.top=redball.top -1;
+                redball.left=redball.left -1;
+                 redball.top=redball.top -1;
+                redball.left=redball.left -1;
+            }
+            function movediagonaldR(){
+                redball.top=redball.top +1;
+                redball.left=redball.left +1;
+                redball.top=redball.top +1;
+                redball.left=redball.left +1;
+                redball.top=redball.top +1;
+                redball.left=redball.left +1;
+                redball.top=redball.top +1;
+                redball.left=redball.left +1;
+                redball.top=redball.top +1;
+                redball.left=redball.left +1;
+                redball.top=redball.top +1;
+                redball.left=redball.left +1;
+            }
+            function movediagonaldL(){
+                redball.top=redball.top +1;
+                redball.left=redball.left -1;
+                 redball.top=redball.top +1;
+                redball.left=redball.left -1;
+                 redball.top=redball.top +1;
+                redball.left=redball.left -1;
+                 redball.top=redball.top +1;
+                redball.left=redball.left -1;
+                 redball.top=redball.top +1;
+                redball.left=redball.left -1;
+                 redball.top=redball.top +1;
+                redball.left=redball.left -1;
+            }
+         
+        
+         
+// from das
+// function moveDownLeft(){
+//            moveDown();
+//            moveDown();
+//}
+            
+        </script>
+       
+<script type="text/javascript" src="https://storage.googleapis.com/ics-redball/redball.js"></script>
+
+      </head>
+  
+   <body>
+       
+       
+       
+        <button onclick="moveDown()">Move Down</button>
+        <button onclick="moveUp()">Move Up</button>
+        <button onclick="moveLeft()">Move Left</button>
+        <button onclick="moveRight()">Move Right</button>
+        <button onclick="sayHello()">Hello World</button>
+        <button onclick="movediagonaluR()">Diagonal UR</button>
+        <button onclick="movediagonaluL()">Diagonal UL</button>
+        <button onclick="movediagonaldR()">Diagonal DR</button>
+        <button onclick="movediagonaldL()">Diagonal DL</button>
+
+     <img id= "redball" src="http://www.esience.org/wp-content/uploads/2012/12/globe.gif">  
+
+
+      
+    </body>
+    
+</html>
