@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> 
+            </script>
+         
+<style>
+    #redball{
+        position:absolute;
+    }
+    
+</style>
+  <script>
+      function pfadeOut(){
+          var bm = $(".blackMonkey");
+          bm.fadeOut();
+      }
+        function pfadeIn(){
+          var bm=$(".blackMonkey");
+          bm.fadeIn();
+      }
+        function moveUp(){
+            var ball=$("#redball")
+        ball.animate({"top":"-=10"},1000,"linear")    
+        }
+          
+        function moveDown(){
+            var ball=$("#redball")
+        ball.animate({"top":"+=10"},1000,"linear")    
+        }
+        function moveLeft(){
+            var ball= $("#redball")
+        ball.animate({"left":"-=10"},1000,"linear")
+        }
+           function moveRight(){
+            var ball=$("#redball")
+        ball.animate({"left":"+=10"},1000,"linear")
+        }
+        
+        function moveSquare(){
+                var ball=$("#redball");
+                 ball.animate({"left":"+=100"},500,"linear");
+                 ball.animate({"top":"-=100"},500,"linear");
+                 ball.animate({"left":"-=100"},500,"linear");
+                 ball.animate({"top":"+=100"},500,"linear");
+                
+            }
+            
+            function moveTriangle(){
+                var ball=$("#redball");
+                ball.animate({"left":"+=100"},500,"linear");
+                ball.animate({"left":"-=50","top":"-=50"},500,"linear");
+                ball.animate({"left":"-=50","top":"+=50"},500,"linear");
+            }
+            
+            function moveOctagonal(){
+                var ball=$("#redball");
+                ball.animate({"top":"+=100"},500,"linear");
+                ball.animate({"left":"+=50","top":"+=50"},500,"linear");
+                ball.animate({"left":"+=100"},500,"linear");
+                ball.animate({"left":"+=50","top":"-=50"},500,"linear");
+                ball.animate({"top":"-=100"},500,"linear");
+                ball.animate({"left":"-=50","top":"-=50"},500,"linear");
+                ball.animate({"left":"-=100"},500,"linear");
+                ball.animate({"left":"-=50","top":"+=50"},500,"linear");
+                ball.amimate({"top":"-=100"},500,"linear");
+
+            }
+  </script>
+
+
+</head>
+<body>
+  <p class="blackMonkey">Black Monkey
+  
+  
+  </p>
+    <p>Green Monkey
+   
+   
+   </p><table border= 23px>
+        <tr>
+        <td><button onclick="moveDown()">Move Down</button></td>
+        <td><button onclick="moveUp()">Move Up</button></td>
+        <td><button onclick="moveLeft()">Move Left</button></td>
+        <td><button onclick="moveRight()">Move Right</button></td>
+            </tr>
+    </table>
+       
+        
+    <table border=20px>    
+        <tr>
+       <td><button onclick="movediagonaluR()">Diagonal UR</button></td>
+       <td><button onclick="movediagonaluL()">Diagonal UL</button></td>
+       <td><button onclick="movediagonaldR()">Diagonal DR</button></td>
+       <td><button onclick="movediagonaldL()">Diagonal DL</button></td>
+        </tr>
+    </table>
+    <table border=20px> 
+       <tr>
+        <td><button onclick="moveSquare()">Square</button></td>
+        <td><button onclick="moveTriangle()">Triangle</button></td>
+        <td><button onclick="moveOctagonal()">Octogonal</button></td> 
+       </tr>
+        </table>
+      
+    <table border=23px 
+        <tr>
+        <td>
+            <button onclick="pfadeOut()">Fade Out</button>
+        </td>
+        <td>
+            <button onclick="pfadeIn()">Fade In</button>
+        </td>
+        </tr>
+    </table>
+    
+    <img id= "redball" src="me.png">
+   
+</body>
+</html>

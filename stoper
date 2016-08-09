@@ -1,0 +1,37 @@
+
+       
+       var redball = function(x,y,size,speed) {
+    this.x = x;
+    this.y = y;
+    this.size = size;
+    this.speed = speed;
+    this.update = function(){
+        if (keys[UP]){
+            this.y = this.y - this.speed;
+            if (this.y <10) {
+                this.y = 10;
+            }
+        }
+        if (keys[DOWN]){
+            this.y = this.y + this.speed;
+            if (this.y >390) {
+                this.y = 390;
+            }
+        }
+        if (keys[LEFT]){
+            this.x = this.x - this.speed;
+            if (this.x <10) {
+                this.x =10;
+            }
+        }
+        if (keys[RIGHT]){
+            this.x = this.x + this.speed;
+            if (this.x >390) {
+                this.x =390;
+            }
+       
+        function sayHello(){
+            alert('Hi there');
+            
+        }-->
+    
